@@ -1,6 +1,7 @@
 /**
  * Created by JordanMavrogeorge on 2/25/16.
  */
+//Start Alert Dialogue box
 function CustomAlert(){
     this.render = function(dialog){
         var winW = window.innerWidth;
@@ -22,6 +23,8 @@ function CustomAlert(){
     }
 }
 var Alert = new CustomAlert();
+//End Alert Dialogue box
+//Start Confirm Dialogue box
 function deletePost(id){
     var db_id = id.replace("post_", "");
     // Run Ajax request here to delete post from database
@@ -56,4 +59,7 @@ function CustomConfirm(){
     }
 }
 var Confirm = new CustomConfirm();
+//End Confirm Dialogue Box
+//Start Prompt Box
 
+//End Prompt Box

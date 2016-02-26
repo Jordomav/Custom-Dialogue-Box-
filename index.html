@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!--CSS LINK-->
     <link rel="stylesheet" href="dialog.css">
+    <!--JS LINK-->
     <script src="dialog.js"></script>
 </head>
 <body>
+<!--MUST BE PUT IN HTML FOR CUSTOM DIALOGUE BOX START-->
 <div id="dialogoverlay"></div>
     <div id="dialogbox">
         <div>
@@ -15,7 +18,10 @@
             <div id="dialogboxfoot"></div>
         </div>
     </div>
+<!--MUST BE PUT IN HTML FOR CUSTOM DIALOGUE BOX END-->
+<!--Alert box action-->
 <button onclick="Alert.render('Hello')">Custom Alert.</button>
+<!--Confirm box action-->
 <p id="post_1">
     Today is a lovely day ...
     <button onclick="Confirm.render('Delete Post?','delete_post','post_1')">Delete</button>
