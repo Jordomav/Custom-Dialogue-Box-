@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="dialog.css">
     <!--JS LINK-->
     <script src="dialog.js"></script>
+    <script>
+        function changeText(val){
+            document.getElementById('status').innerHTML = val;
+        }
+        function doStuff(val){
+            document.body.style.background = val;
+        }
+    </script>
 </head>
 <body>
 <!--MUST BE PUT IN HTML FOR CUSTOM DIALOGUE BOX START-->
@@ -20,8 +28,10 @@
     </div>
 <!--MUST BE PUT IN HTML FOR CUSTOM DIALOGUE BOX END-->
 <!--Alert box action-->
+<h1>Alert Example</h1>
 <button onclick="Alert.render('Hello')">Custom Alert.</button>
 <!--Confirm box action-->
+<h1>Confirm Example</h1>
 <p id="post_1">
     Today is a lovely day ...
     <button onclick="Confirm.render('Delete Post?','delete_post','post_1')">Delete</button>
@@ -30,5 +40,8 @@
     I like pickles ...
     <button onclick="Confirm.render('Delete Post?','delete_post','post_2')">Delete</button>
 </p>
+<!--Prompt box action-->
+<h1 id="status">Prompt Example</h1>
+<button onclick="Prompt.render('New text:', 'changeText')">Change Text</button>
 </body>
 </html>

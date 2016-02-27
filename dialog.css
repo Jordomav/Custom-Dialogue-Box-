@@ -1,4 +1,5 @@
-/*Dialogue overlay css*/
+/*Dialogue overlay css.
+Can change but not recommended*/
 #dialogoverlay{
     display: none;
     opacity: .8;
@@ -9,7 +10,8 @@
     width: 100%;
     z-index: 10;
 }
-/*Dialogue Box css*/
+/*Dialogue Box css.
+Freely change to match the color of your project.*/
 #dialogbox{
     display: none;
     position: fixed;
